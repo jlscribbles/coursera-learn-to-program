@@ -54,6 +54,7 @@ def to_float_hours(hours, minutes, seconds):
     1.01
     """
 
+    return hours + minutes / 60 + seconds / 3600
 
 
 def to_24_hour_clock(hours):
