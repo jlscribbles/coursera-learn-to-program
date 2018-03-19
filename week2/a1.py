@@ -83,7 +83,22 @@ def to_24_hour_clock(hours):
 
 ### Write your get_hours function definition here:
 
+def get_hours(seconds):
+    """ (number) -> int
 
+    for a given time seconds, returns the number of hours floored
+
+    Precondition: seconds >= 0
+
+    >>> get_hours(3800)
+    1
+    >>> get_hours(3599)
+    0
+    >>> get_hours(7201)
+    2
+    """
+
+    return seconds // 3600
 
 
 ### Write your get_minutes function definition here:
