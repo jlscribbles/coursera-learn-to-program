@@ -34,6 +34,8 @@ def hours_difference(time_1, time_2):
     0.0
     """
 
+    return seconds_difference(time_1, time_2) / 60 / 60
+
 
 
 def to_float_hours(hours, minutes, seconds):
