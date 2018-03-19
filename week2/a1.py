@@ -92,9 +92,13 @@ def get_hours(seconds):
     0
     >>> get_hours(7201)
     2
+    >>> get_hours(86400)
+    0
+    >>> get_hours(90200)
+    1
     """
 
-    return seconds // 3600
+    return seconds % 86400 // 3600
 
 
 def get_minutes(seconds):
