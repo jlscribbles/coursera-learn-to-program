@@ -116,10 +116,24 @@ def get_minutes(seconds):
 
     return seconds % 3600 // 60
 
+def get_seconds(seconds):
+    """ (number) -> int
 
+    for a given time seconds, returns the number of minutes floored
 
-### Write your get_seconds function definition here:
+    Precondition: seconds >= 0
 
+    >>> get_seconds(3800)
+    20
+    >>> get_seconds(200)
+    20
+    >>> get_seconds(61)
+    1
+    >>> get_seconds(48)
+    48
+    """
+
+    return seconds % 3600 % 60
 
 
 
