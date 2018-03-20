@@ -160,6 +160,7 @@ def time_to_utc(utc_offset, time):
     >>> time_to_utc(-1, 23.0)
     0.0
     """
+    return to_24_hour_clock(to_24_hour_clock(time) - utc_offset)
 
 
 
@@ -185,6 +186,8 @@ def time_from_utc(utc_offset, time):
     >>> time_from_utc(+1, 23.0)
     0.0
     """
+
+    return to_24_hour_clock(to_24_hour_clock(time) + utc_offset)
 
 
 
