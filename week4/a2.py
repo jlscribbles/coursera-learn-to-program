@@ -55,3 +55,12 @@ def contains_sequence(dna1, dna2):
 
     """
     return dna2 in dna1
+
+def 𝚒𝚜_𝚟𝚊𝚕𝚒𝚍_𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎(dna):
+    for char in dna:
+      if not char in 'ATCG':
+          return False
+    return True
+
+def 𝚒𝚗𝚜𝚎𝚛𝚝_𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎(dna1, dna2, index):
+    return dna1[:index] + dna2 + dna1[index:]
