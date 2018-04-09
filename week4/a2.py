@@ -64,3 +64,31 @@ def 𝚒𝚜_𝚟𝚊𝚕𝚒𝚍_𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎(dna):
 
 def 𝚒𝚗𝚜𝚎𝚛𝚝_𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎(dna1, dna2, index):
     return dna1[:index] + dna2 + dna1[index:]
+
+def 𝚐𝚎𝚝_𝚌𝚘𝚖𝚙𝚕𝚎𝚖𝚎𝚗𝚝(dna):
+    complement = ''
+    for char in dna:
+      if char == 'A':
+        complement = complement + 'T'
+      elif char == 'T':
+        complement = complement + 'A'
+      elif char == 'C':
+        complement = complement + 'G'
+      elif char == 'G':
+        complement = complement + 'C'
+
+    return complement
+
+def 𝚐𝚎𝚝_𝚌𝚘𝚖𝚙𝚕𝚎𝚖𝚎𝚗𝚝ary_sequence(dna):
+    complement = ''
+    for char in dna:
+      if char == 'A':
+        complement = complement + 'T'
+      elif char == 'T':
+        complement = complement + 'A'
+      elif char == 'C':
+        complement = complement + 'G'
+      elif char == 'G':
+        complement = complement + 'C'
+
+    return complement
