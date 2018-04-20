@@ -89,7 +89,7 @@ def board_contains_word_in_column(board, word):
     >>> board_contains_word_in_column([['A', 'N', 'T', 'T'], ['X', 'S', 'O', 'B']], 'NO')
     False
     """
-    for column in range(len(board)):
+    for column in range(len(board[0])):
       if word in make_str_from_column(board, column):
         return True
 
