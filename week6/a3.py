@@ -191,6 +191,7 @@ def read_board(board_file):
 
   for line in board_file:
     row = []
+    line = line.strip()
     for char in line:
       row.append(char)
     board.append(row)
