@@ -175,7 +175,7 @@ def read_words(words_file):
   """
   string_list = []
   for line in words_file:
-    string_list.append(line)
+    string_list.append(line.strip())
 
   return string_list
 
