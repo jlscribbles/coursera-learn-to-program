@@ -124,7 +124,18 @@ def word_score(word):
   """
   length = len(word)
 
-  return min((length - 1) / 3, 3)
+  points_per_char = 0
+
+  if (length < 3):
+    points_per_char = 0
+  elif (length < 7):
+    points_per_char = 1
+  elif (length < 10):
+    points_per_char = 2
+  else:
+    points_per_char = 3
+    
+  return length * points_per_char
 
 def update_score(player_info, word):
     """ ([str, int] list, str) -> NoneType
